@@ -84,8 +84,8 @@ DATABASES = {
         'NAME': 'learndjango',
         'USER': 'postgres',
         'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
 

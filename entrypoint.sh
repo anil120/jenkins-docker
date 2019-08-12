@@ -1,8 +1,8 @@
 #!/bin/bash
 
 python manage.py migrate
-python manage.py collectstatic 
-python manage.py runserver 0.0.0.0:8000 --nothreading 
+#python manage.py collectstatic 
+python manage.py runserver 0.0.0.0:8000 
 # exec gunicorn learnDjango.wsgi:application \
 #      --name learnDjango \
 #      --bind 0.0.0.0:8000 \

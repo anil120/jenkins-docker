@@ -12,14 +12,11 @@ RUN pip3 install -r requirements.txt
 
 COPY . /usr/src/learnDjango/
 
-COPY entrypoint.sh /usr/src/learnDjango
-
-RUN  python manage.py migrate ;\
-     python manage.py collectstatic 
+COPY entrypoint.sh /usr/src/learnDjango 
      
-CMD [ "python", "./manage.py runserver 0.0.0.0:8000" ]
+#CMD [ "python", "./manage.py runserver 0.0.0.0:8000" ]
 
 #EXPOSE 8000
 
-CMD ["./entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
 
